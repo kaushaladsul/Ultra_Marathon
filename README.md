@@ -13,13 +13,21 @@ This project explores a large dataset of ultramarathon race results. The Jupyter
 
 ## Results
 
-The analysis reports:
+| Notebook output | Result |
+|---|---:|
+| Source rows | 7,117,634 |
+| Source event-year range | 1798-2022 |
+| Rows after cleaning | 4,197,149 |
+| Columns in cleaned working dataframe | 14 |
+| Columns in final analysis dataframe (`ds`) | 13 |
 
-- **7,117,634** source rows, spanning event years **1798–2022**.
-- **4,197,149** rows after the notebook's cleaning steps.
-- **14** columns in the cleaned working dataframe and **13** in the final analysis dataframe.
+The first row of the final analysis dataframe is:
 
-The country chart counts **unique Athlete IDs** per athlete country, so repeated race appearances do not inflate athlete counts. It displays the 20 countries with the most athletes.
+| Athlete ID | Age | Gender | Athlete country | Event | Event country | Year | Distance (km) | Average speed |
+|---:|---:|:---:|:---:|---|:---:|---:|---:|---:|
+| 0 | 40 | M | CHI | Selva Costera (CHI) | CHI | 2018 | 50.0 | 10.286 |
+
+The country bar chart shows the **top 20 athlete countries by distinct Athlete IDs**. Each athlete is counted once per country, regardless of repeated race appearances. Run the final notebook cell to render the chart.
 
 ## Running the notebook
 
